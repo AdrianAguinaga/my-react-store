@@ -3,7 +3,7 @@ import QuantityPicker from './QuantityPicker';
 function Product(props) {
   return (
     <div className="card" style={{width: "18rem"}}>
-        <img src="https://picsum.photos/200/200" className="card-img-top" alt="..."/>
+        <img src={"/images/"+ props.data.image} className="card-img-top" alt="..."/>
         <div className="card-body">
           <h5 className="text-start">{props.data.title}</h5>
           <h6 className="text-start">${props.data.price.toFixed(2)}</h6>
